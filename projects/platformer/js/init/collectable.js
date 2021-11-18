@@ -38,11 +38,13 @@
         
         // example: 
         createCollectable(type.steve, 200, 170, 6, 0.7);
-        
+        createCollectable(type.max, 600, 150, 6, 0.7); 
+        createCollectable(type.grace, 100, 500, 6, 0.7)
         
         
         // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
         ////////////////////////////////////////////////////////////////////////
     };
     collectable.init = init;
+    
 })(window);
