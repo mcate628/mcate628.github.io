@@ -9,7 +9,7 @@
 		.box {
 			width: 70px;
 			height: 70px;
-			background-color: teal;
+			background-color: #4DF7FF;
 			font-size: 300%;
 			text-align: center;
 			display: block;
@@ -22,7 +22,11 @@
 		.board {
 			height: 100vh;
 		}
-	</style>
+     
+		body {
+			background-color: #0000FF; 
+		}
+    </style>
 	<!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
 
 </head>
@@ -66,8 +70,10 @@
 
 			// TODO 2 - Variable declarations 
 			var positionX = 0; 
-           var points = 0; 
-        
+            var points = 0; 
+            var speed = 10; 
+            var randNum = Math.random();
+
 
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
@@ -75,9 +81,17 @@
 			turn it around! 
 			*/
 			function update() {
-              positionX = positionX + 10; 
+              positionX = positionX + speed; 
 				moveBoxTo(positionX);
+				if (positionX > boardWidth) {
+					speed = -speed; 
+				}
+                if (positionX < 0) {
+					speed = -speed; 
+				}
+                
 
+				
 			};
 
 			/* 
@@ -86,11 +100,16 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
-            positionX = 0; 
-
+            positionX = randNum * boardWidth; 
+            speed = speed + 3; 
             points = points + 1; 
-
 			 changeBoxText(points); 
+			 if (speed = speed) {
+				 speed = speed + 3;
+			 }
+			 if (speed = -speed) {
+				 speed = speed - 3; 
+			 }
 
 			};
 		})();
