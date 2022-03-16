@@ -44,8 +44,7 @@ definte the function called  ```likePhoto``` in the brain.js file in order for u
     d) If you are able to inspect the page, do so and open the console tab. 
     e) You should see the word "like" printed to the console each time you press the button, like this:
   
-   <img src="../img/console_like.png" style="max-height: 450px">
-
+ <button onClick="likePhoto()">Like</button><button onClick="likePhoto()">Like</button><button>
     
 
 #### TODO #22: Create a variable to store the number of likes!
