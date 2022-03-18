@@ -19,6 +19,11 @@
     .captions {
         margin-bottom: 70px;
     }
+    .pic-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
      </style>
 
 </head>
@@ -26,42 +31,51 @@
 <!--VISIBLE TO THE USER-->
 <body>
 
-    <h1 class="brandfont">Catsagram</h1>
-    <h5 class="brandfont">Sharing the World's Spookiest cats</h5>
+    <h1 class="brand-font">Catsagram</h1>
+    <h5 class="brand-font">Sharing the World's Spookiest cats</h5>
     <div id="name"></div>
     <div id="name_last"></div>
     <div id="followers"></div>
     <img id="profile_pic">
 
     <!--Cat Photo1-->
-    <img src= "https://i.imgur.com/rPSnApvh.jpg"
-    <div id="likeCount0"></div>
-    <button id="likeBtn">Like</button> 
-    <p>Spook</p>
+    <div>
+    <img 
+        src= "https://i.imgur.com/rPSnApvh.jpg">
+    <div id="likeCount1"></div>
+    <button id='likeBtn1' onClick="likePhoto(1)">Like</button>
+    <p> class='caption'>Spook</p>
 
     <!--Cat Photo2-->
-    <img src="https://images.livemint.com/img/2021/10/23/689x388/Halloween_cat_1634971723979_1634973375444.jpg"
-    <div id="likeCount1"></div>
-    <button id="likeBtn">Like</button> 
-    <p>Croc</p>
+    <img
+         src="https://images.livemint.com/img/2021/10/23/689x388/Halloween_cat_1634971723979_1634973375444.jpg">
+    <div id="likeCount2"></div>
+    <button id="likeBtn2" onClick="likePhoto(2)">Like</button>
+    <p class="caption">Croc</p>
 
     <!--Cat Photo3-->
-    <img src="https://i.pinimg.com/originals/7c/01/b0/7c01b05706e298084dafa28de25d2e8c.jpg" 
-    <div id="likeCount2"></div>
-    <button id="likeBtn">Like</button> 
-    <p>not actually a cat (skinwalker)</p>
+    <img
+         src="https://i.pinimg.com/originals/7c/01/b0/7c01b05706e298084dafa28de25d2e8c.jpg">
+    <div id="likeCount3"></div>
+    <button id="likeBtn3" onClick="likePhoto(3)">Like</button>
+    <p class="caption">not actually a cat (skinwalker)</p>
 
     <!--Cat Photo4-->
-    <img src="https://img.ifunny.co/images/e49b827e6033da7d2bae7ee7600c9c3b9ee5b5237ad37b49b06a6c0b013da9cd_1.jpg"
-    <div id="likeCount3"></div>
-    <button id="likeBtn">Like</button> 
-    <p>Dolores from Encanto be like</p>
+    <img
+         src="https://img.ifunny.co/images/e49b827e6033da7d2bae7ee7600c9c3b9ee5b5237ad37b49b06a6c0b013da9cd_1.jpg">
+    <div id="likeCount4"></div>
+    <button id="likeBtn4" onClick="likePhoto(4)">Like</button>
+    <p class="caption">Dolores from Encanto be like</p>
 
     <!--Cat Photo5-->
-    <img src="https://i.ytimg.com/vi/Cf-Lan11gug/maxresdefault.jpg"
-    <div id="likeCount4"></div>
-    <button id="likeBtn">Like</button> 
-    <p>Beluga</p>
+    <img 
+        src="https://i.ytimg.com/vi/Cf-Lan11gug/maxresdefault.jpg">
+    <div id="likeCount5"></div>
+    <button id="likeBtn5" onClick="likePhoto(5)">Like</button>
+    <p class="caption">Beluga</p>
+
+    </div>
 </body>
+
 
 </html>
